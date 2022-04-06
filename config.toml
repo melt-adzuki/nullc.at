@@ -1,0 +1,23 @@
+baseURL = "https://nullc.at/"
+
+title = "nullc.at"
+
+author = "NullCat"
+
+theme = "nca10"
+
+HasCJKLanguage = true
+
+DefaultContentLanguage = "ja"
+
+languageCode = "ja-jp"
+
+enableRobotsTXT = true
+
+[Params]
+dateformat = "2006/01/02"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+archive = "archives"
