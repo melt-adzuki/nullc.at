@@ -16,6 +16,7 @@ enableRobotsTXT = true
 
 [Params]
 dateformat = "2006/01/02"
+description = "ぬるきゃっとのホームページ"
 
 [taxonomies]
 tag = "tags"
