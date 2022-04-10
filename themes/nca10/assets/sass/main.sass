@@ -1,11 +1,15 @@
 @import "header"
+@import "index"
+@import "single"
 
 *
   font-family: 'DotGothic16', sans-serif
   box-sizing: border-box
+  color: #707070
 
-body
+body:not(#is-404)
   margin: 0
+  background: url("/images/bg.png")
 
 .main__container
   margin: auto
