@@ -7,3 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ (resources.Get "sass/main.sass" | toCSS | minify).RelPermalink }}">
 <title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+<!-- Open Graph Protocol -->
+<meta property="og:title" content="nullc.at" />
+<meta property="og:description" content="ぬるきゃっとのホームページです" />
+<meta property="og:url" content="https://nullc.at" />
+<meta property="og:image" content="https://s3.nca10.net/misskey/6facd34d-1ec0-41ac-b36d-16291b279c7a.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:site" content="@nullnyat" />
+<meta name="twitter:creator" content="@nullnyat" />
+<meta name="twitter:card" content="summary" />
