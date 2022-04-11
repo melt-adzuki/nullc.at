@@ -2,5 +2,25 @@
 <h1>{{ .Title }}</h1>
 <article class='article__container'>
     <p>{{ .Content }}</p>
+    <img class='article__top-button article__top-button--is-disabled' src='/images/neko.png' alt='Neko'>
 </article>
+
+<script>
+    const button = document.querySelector('.article__top-button')
+
+    button.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    })
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            button.classList.remove('article__top-button--is-disabled')
+        } else {
+            button.classList.add('article__top-button--is-disabled')
+        }
+    })
+</script>
 {{ end }}
