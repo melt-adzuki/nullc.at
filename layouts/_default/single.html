@@ -1,8 +1,10 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<article class='article__container'>
-    <p>{{ .Content }}</p>
-    <img class='article__top-button article__top-button--is-disabled' src='/images/neko.png' alt='Neko'>
+<article>
+    <h1>{{ .Title }}</h1>
+    <div class='article__container'>
+        <p>{{ .Content }}</p>
+    </div>
+    <img class='article__top-button article__top-button--disabled' src='/images/neko.png' alt='Neko'>
 </article>
 
 <script>
@@ -17,9 +19,9 @@
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            button.classList.remove('article__top-button--is-disabled')
+            button.classList.remove('article__top-button--disabled')
         } else {
-            button.classList.add('article__top-button--is-disabled')
+            button.classList.add('article__top-button--disabled')
         }
     })
 </script>

@@ -2,11 +2,12 @@
 <html lang='ja'>
     <head>{{- partial "head.html" . -}}</head>
     <body>
-        <div class='main__container'>
+        <div class='main__wrapper'>
             {{- partial "header.html" . -}}
-            <div id="content">
-            {{- block "main" . }}{{- end }}
-            </div>
+
+            <main>
+                {{- block "main" . }}{{- end }}
+            </main>
         </div>
     </body>
 </html>
