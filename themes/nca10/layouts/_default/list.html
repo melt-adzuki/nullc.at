@@ -1,11 +1,12 @@
 {{ define "main" }}
-<h1>Memo</h1>
+<h1>{{ .Title }}</h1>
 <div class='article__container'>
-    {{ range .Data.Pages }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <div class="meta">{{ .Date.Format "2006/01/02 15:04:05" }}</div>
-    </li>
-    {{ end }}
+    <ul>
+        {{ range .Data.Pages }}
+        <li class='list__item--title'>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
 </div>
 {{ end }}
