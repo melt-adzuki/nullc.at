@@ -1,5 +1,5 @@
 ---
-title: "Kawaii"
+title: "僕の思うかわいいもの"
 date: 2022-04-11T03:05:52+09:00
 draft: false
 ---

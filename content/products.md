@@ -6,4 +6,4 @@ draft: false
 
 - [NullcatChan!(Misskey)](/chan/misskey)
 - [NullcatChan!(Discord)](/chan/discord/)
-- [nca10.net](https://nca10.net)
+- [nca10.net](/nca10.net/)
