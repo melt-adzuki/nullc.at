@@ -4,6 +4,8 @@
   padding: 16px 32px 16px 32px
   min-height: 768px
 
+  @import 'article'
+
 .article__top-button
   position: fixed
   bottom: 32px
@@ -17,3 +19,10 @@
 
 .article__top-button--disabled
   opacity: 0
+
+@media screen and (max-width: 768px)
+  .article__title
+    text-align: center
+
+  .article__top-button
+    width: 96px

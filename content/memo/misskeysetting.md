@@ -31,7 +31,7 @@ draft: false
 カラム間のマージン: 1px
 
 ## メニュー
-````
+```
 notifications
 messaging
 antennas
@@ -40,6 +40,6 @@ followRequests
 drive
 pages
 search
-````
+```
 
 表示:横(アイコン)

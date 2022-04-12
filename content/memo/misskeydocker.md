@@ -14,7 +14,7 @@ draft: false
 
 1. `docker-compose.yml`  を下のに変更
 
-```
+```yaml
 version: "3"
 
 services:

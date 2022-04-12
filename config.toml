@@ -6,6 +6,7 @@ DefaultContentLanguage = "ja"
 languageCode = "ja-jp"
 enableRobotsTXT = true
 pluralizeListTitles = false
+markup.highlight.noClasses = false
 
 [Params]
 dateformat = "2006/01/02"

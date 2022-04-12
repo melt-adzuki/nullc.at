@@ -4,7 +4,7 @@ date: 2022-04-11T19:48:56+09:00
 draft: false
 ---
 
-````
+````javascript
 setInterval(() => {
   for (const d of document.querySelectorAll('div[data-testid="unlike"]')) {
     d.click()

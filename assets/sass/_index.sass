@@ -24,8 +24,20 @@
   &.div3
     grid-area: 1 / 2 / 3 / 3
 
+@media screen and (max-width: 768px)
+  .index__container
+    display: inline
+
+  .index__container__item
+    margin-block: 16px
+    margin-inline: 16px
+
 .index__container__item__banner
   display: flex
+  flex-wrap: wrap
   flex-direction: row
   gap: 16px
   align-items: center
+
+  img
+    width: 150px
