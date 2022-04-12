@@ -19,6 +19,6 @@
         <p>失敗した内容: PAGE_NOT_FOUND</p>
     </div>
 </div>
-<script src="/scripts/404.js"></script>
+<script src="{{ (resources.Get "scripts/404.js" | minify).RelPermalink }}"></script>
 </body>
 </html>
