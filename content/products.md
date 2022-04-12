@@ -5,6 +5,6 @@ draft: false
 ---
 
 - [NullcatChan!](/chan/)
-- [NullcatChan!(Misskey)](/chan/misskey)
-- [NullcatChan!(Discord)](/chan/discord/)
+- [NullcatChan! on Misskey](/chan-on-misskey/)
+- [NullcatChan! on Discord](/chan-on-discord/)
 - [nca10.net](/nca10.net/)

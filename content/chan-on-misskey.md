@@ -1,5 +1,5 @@
 ---
-title: "NullcatChan!(Misskey)"
+title: "NullcatChan! on Misskey"
 date: 2022-04-11T01:57:23+09:00
 draft: false
 ---

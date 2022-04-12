@@ -32,8 +32,8 @@ title: NullcatChan!
 アンテナが頭の上半径30cm圏内にないと感情がなくなってしまう。
 
 ## 取扱説明書
-- [Misskey](../chan/misskey)
-- [Discord](../chan/discord)
+- [Misskey](/chan-on-misskey/)
+- [Discord](/chan-on-discord/)
 
 ## リポジトリ
 
