@@ -5,7 +5,7 @@
   grid-column-gap: 32px
   grid-row-gap: 32px
 
-.index__container__item
+.index__item
   background-color: white
   border-style: solid
   border-width: 1.5px
@@ -24,15 +24,7 @@
   &.div3
     grid-area: 1 / 2 / 3 / 3
 
-@media screen and (max-width: 768px)
-  .index__container
-    display: inline
-
-  .index__container__item
-    margin-block: 16px
-    margin-inline: 16px
-
-.index__container__item__banner
+.index__banner
   display: flex
   flex-wrap: wrap
   flex-direction: row
@@ -41,3 +33,11 @@
 
   img
     width: 150px
+
+@media screen and (max-width: 768px)
+  .index__container
+    display: inline
+
+  .index__item
+    margin-block: 16px
+    margin-inline: 16px

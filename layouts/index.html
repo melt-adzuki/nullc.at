@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="index__container">
 
-    <div class="index__container__item div1">
+    <div class="index__item div1">
         <h2>memolog</h2>
         {{ range (.Site.GetPage "memo").Pages }}
         <ul>
@@ -10,16 +10,16 @@
         {{ end }}
     </div>
 
-    <div class="index__container__item div2">
+    <div class="index__item div2">
         <h2>banner</h2>
-        <div class='index__container__item__banner'>
+        <div class='index__banner'>
             <a href='https://nullc.at'><img src='/images/nullcat-header.png' alt='nullc.at-banner'></a>
             <a href='https://yude.jp'><img src="https://yude.jp/images/banner_new.png" alt="yude-banner"></a>
             <a href='http://mwxdxx.ml/'><img src='/images/mwxdxx.png' alt='mwxdxx-banner'></a>
         </div>
     </div>
 
-    <div class="index__container__item div3">
+    <div class="index__item div3">
         <h2>twitterlog</h2>
         <a class="twitter-timeline" data-height="768" data-theme="light" href="https://twitter.com/nullnyat?ref_src=twsrc%5Etfw">Tweets by nullnyat</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
