@@ -1,19 +1,10 @@
 baseURL = "https://nullc.at/"
-
 title = "nullc.at"
-
 author = "NullCat"
-
-theme = "nca10"
-
 HasCJKLanguage = true
-
 DefaultContentLanguage = "ja"
-
 languageCode = "ja-jp"
-
 enableRobotsTXT = true
-
 pluralizeListTitles = false
 
 [Params]

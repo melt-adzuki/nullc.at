@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <title>404 page not found.</title>
+    {{ partial "head.html" . }}
+    <link href="{{ (resources.Get "sass/404.sass" | toCSS | minify).RelPermalink }}" rel="stylesheet">
+    <script type='text/javascript' src='https://unpkg.com/countup.js@2.1.0/dist/countUp.umd.js'></script>
+    <meta http-equiv="refresh" content="5;URL=https://nullc.at">
+</head>
+<body id='is-404'>
+<h1>:(</h1>
+<p class="RedirectMessage">このページは存在しないよ。5秒後にホームページに移動するよ。</p>
+<p class="count"><span id="count">0</span>%完了</p>
+<div class="entire">
+    <img src="/images/404.svg" alt="QR">
+    <div class="list">
+        <a href="https://nullc.at">https://nullc.at</a>
+        <p>停止コード: 404</p>
+        <p>失敗した内容: PAGE_NOT_FOUND</p>
+    </div>
+</div>
+<script src="/scripts/404.js"></script>
+</body>
+</html>
