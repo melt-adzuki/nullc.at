@@ -1,14 +1,8 @@
 ---
-title: "Misskeyとdockerとかなんか色々"
+title: "localでmisskeyを起動する方法(Docker)"
 date: 2022-04-11T19:58:23+09:00
 draft: false
 ---
-
-## misskeyのアップデート方法(DockerHub)
-
-1. `docker-compose pull` で最新のDockerのimageを落としてくる
-2. `docker-compose up -d` でDockerを立ち上げる
-3. `docker image prune` で古いimageを削除
 
 ## localでmisskeyを起動する方法(Docker)
 
