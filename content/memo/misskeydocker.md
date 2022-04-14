@@ -4,8 +4,6 @@ date: 2022-04-11T19:58:23+09:00
 draft: false
 ---
 
-## localでmisskeyを起動する方法(Docker)
-
 1. `docker-compose.yml`  を下のに変更
 
 ```yaml
