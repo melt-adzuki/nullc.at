@@ -4,7 +4,7 @@ date: 2022-04-12T20:00:28+09:00
 draft: false
 ---
 
-````text
+```text
 Black: #13141C
 BrightBlack: #4F5766
 Blue: #96CCE7
@@ -21,15 +21,15 @@ Yellow: #E7E7B0
 BrightYellow: #E8E8CB
 Orange: #E7BA95
 BrightOrange: #E7D3B0
-````
+```
 
 Slack
-````text
-#13141C,#2C3849,#96CCE7,#FFFFFF,#4F5766,#FFFFFF,#B0E7CB,#FF9D9D,#13141C,#FFFFFF
-````
+```text
+#13141C,#2C3849,#96CCE7,#d5eeff,#4F5766,#d5eeff,#B0E7CB,#FF9D9D,#13141C,#d5eeff
+```
 
 Windows Terminal
-````json
+```json
 {
   "background": "#13141C",
   "black": "#13141C",
@@ -50,12 +50,12 @@ Windows Terminal
   "purple": "#CECEFF",
   "red": "#FF9D9D",
   "selectionBackground": "#BAE1F4",
-  "white": "#FFFFFF",
+  "white": "#d5eeff",
   "yellow": "#E7E7B0"
 }
-````
+```
 negligible.ncat.omp.json(oh-my-posh)
-````json
+```json
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
@@ -178,4 +178,4 @@ negligible.ncat.omp.json(oh-my-posh)
     }
   ]
 }
-````
+```
