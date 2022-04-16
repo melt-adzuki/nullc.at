@@ -11,7 +11,7 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 ```
 でインストール
 
-##　bucketの追加
+## bucketの追加
 ```text
 scoop bucket add extras
 scoop bucket add versions
