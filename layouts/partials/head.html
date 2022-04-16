@@ -10,7 +10,7 @@
 
 <!-- Open Graph Protocol -->
 <meta property="og:title" content="nullc.at" />
-<meta property="og:description" content="{{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }}" />
+<meta property="og:description" content="{{ if not .IsHome }}{{ .Title }}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}" />
 <meta property="og:url" content="https://nullc.at" />
 <meta property="og:image" content="https://s3.nca10.net/misskey/6facd34d-1ec0-41ac-b36d-16291b279c7a.png" />
 <meta property="og:type" content="website" />
