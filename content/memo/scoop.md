@@ -20,7 +20,7 @@ scoop bucket add versions
 ## 僕の入れてるものを一括で入れるコマンド
 
 ```text
-scoop install git hugo-extended sudo go python nodejs16e gcc
+scoop install git hugo-extended sudo go python nodejs16 gcc
 ```
 
 ## update方法

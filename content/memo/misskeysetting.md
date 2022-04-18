@@ -31,7 +31,7 @@ draft: false
 カラム間のマージン: 1px
 
 ### メニュー
-```
+```text
 notifications
 messaging
 antennas
