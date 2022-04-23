@@ -95,19 +95,34 @@ themeの設定は `omf install {{theme}}`でやる。
 
 ちなみに僕の使ってるThemeはclearanceです。
 
-theme一覧は(ここ)[https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md]。
+theme一覧は[ここ](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md)。
 
 ---
 
-## byobuの設定
+## tmuxの設定
 
-`sudo pacman -S byobu`でインストール
+`sudo pacman -S tmux`でインストール
 
-`byobu-enable`でログイン時に自動でbyobuが起動してくれるようになる
+色々設定を変えたいときは`~/.tmux.conf`の中身を変更する
 
-`byobu-disable-prompt`でbyobuの色設定を使わなくする
+中身を
+```
+set -g @plugins '                  \
+  tmux-plugins/tpm                 \
+  tmux-plugins/tmux-yank           \
+  tmux-plugins/tmux-open           \
+  tmux-plugins/tmux-resurrect      \
+  tmux-plugins/tmux-battery        \
+  tmux-plugins/tmux-pain-control   \
+  arcticicestudio/nord-tmux        \
+'
 
----
+run -b '~/.tmux/plugins/tpm/tpm'
+
+```
+にすると(僕が)幸せになれる
+
+tmuxを開いて`ctrl+b`→`ctrl+i`でプラグインがインストールできる
 
 ## UwUFetchのインストール
 
