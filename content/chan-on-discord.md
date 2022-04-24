@@ -8,4 +8,4 @@ draft: false
 
 ---
 
-- [リポジトリ](https://github.com/nullnyat/NullcatChan-Discord)
+- [リポジトリ](https://github.com/melt-adzuki/nullcatchan-on-discordd)

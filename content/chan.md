@@ -38,4 +38,4 @@ title: NullcatChan!
 ## リポジトリ
 
 - [nca10.net(MisskeyInstance)](https://github.com/nullnyat/NullcatChan)
-- [NCA10(DiscordServer)](https://github.com/nullnyat/NullcatChan-Discord)
+- [NCA10(DiscordServer)](https://github.com/melt-adzuki/nullcatchan-on-discord)
