@@ -23,14 +23,12 @@ draft: false
 曲を聞くこと
 
 # 環境
-OS: Windows11, MIUI13, Ubuntu20.04 LTS
+OS: Windows11, MIUI13, ArchLinux, Ubuntu20.04
 
-IDE: WebStorm, VSCode
+IDE: IntelliJ
 
-Terminal: WindowsTerminal
+Shell: Pwsh7, fish
 
-Shell: Pwsh7, Zsh
-
-keyboard: REALDORCE R3
+keyboard: REALDORCE
 
 Mouse: M5750W

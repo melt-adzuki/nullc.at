@@ -106,7 +106,7 @@ theme一覧は[ここ](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs
 色々設定を変えたいときは`~/.tmux.conf`の中身を変更する
 
 中身を
-```
+```text
 set -g @plugins '                  \
   tmux-plugins/tpm                 \
   tmux-plugins/tmux-yank           \
@@ -118,7 +118,6 @@ set -g @plugins '                  \
 '
 
 run -b '~/.tmux/plugins/tpm/tpm'
-
 ```
 にすると(僕が)幸せになれる
 
