@@ -4,7 +4,6 @@ date: 2022-04-11T01:40:03+09:00
 draft: false
 ---
 
-- [Twitter](https://twitter.com/nullnyat)
 - [GitHub](https://github.com/nullnyat)
 - [Pixiv](https://www.pixiv.net/users/74107311)
 - [Discord](https://discordapp.com/users/839568515848470538)
