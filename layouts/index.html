@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="index__container">
+<div class='index__container'>
 
-    <div class="index__item div1">
+    <div class='index__item div1'>
         <h2>memolog</h2>
         {{ range (.Site.GetPage "memo").Pages }}
         <ul>
@@ -10,7 +10,7 @@
         {{ end }}
     </div>
 
-    <div class="index__item div2">
+    <div class='index__item div2'>
         <h2>banner</h2>
         <div class='index__banner'>
             <a href='https://nullc.at'><img src='/images/nullcat-header.png' alt='nullc.at-banner'></a>
@@ -20,10 +20,12 @@
         </div>
     </div>
 
-    <div class="index__item div3">
-        <h2>twitterlog</h2>
-        <a class="twitter-timeline" data-height="768" data-theme="light" href="https://twitter.com/nullnyat?ref_src=twsrc%5Etfw">Tweets by nullnyat</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class='index__item div3'>
+        <h2>My Repositories</h2>
+        <a href='https://github.com/nullnyat/nullc.at'><img width='350' src='https://gh-card.dev/repos/nullnyat/nullc.at.svg'></a>
+        <a href='https://github.com/nullnyat/nca10.net'><img width='350' src='https://gh-card.dev/repos/nullnyat/nca10.net.svg'></a>
+        <a href='https://github.com/nullnyat/NullcatChan'><img width='350' src='https://gh-card.dev/repos/nullnyat/NullcatChan.svg'></a>
+        <a href='https://github.com/nullnyat/nullnyat'><img width='350' src='https://gh-card.dev/repos/nullnyat/nullnyat.svg'></a>
     </div>
 
 </div>
