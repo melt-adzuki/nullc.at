@@ -3,11 +3,12 @@
 
     <div class='index__item div1'>
         <h2>memolog</h2>
-        {{ range (.Site.GetPage "memo").Pages }}
         <ul>
+            {{ range first 5 (.Site.GetPage "memo").Pages }}
             <li><a href='{{ .Permalink }}'>{{ .Title }}</a></li>
+            {{ end }}
         </ul>
-        {{ end }}
+
     </div>
 
     <div class='index__item div2'>
@@ -22,11 +23,9 @@
 
     <div class='index__item div3'>
         <h2>My Repositories</h2>
-        <a href='https://github.com/nullnyat/nullc.at'><img width='350' src='https://gh-card.dev/repos/nullnyat/nullc.at.svg'></a>
-        <a href='https://github.com/nullnyat/nca10.net'><img width='350' src='https://gh-card.dev/repos/nullnyat/nca10.net.svg'></a>
-        <a href='https://github.com/nullnyat/NullcatChan'><img width='350' src='https://gh-card.dev/repos/nullnyat/NullcatChan.svg'></a>
-        <a href='https://github.com/nullnyat/nullnyat'><img width='350' src='https://gh-card.dev/repos/nullnyat/nullnyat.svg'></a>
+        <div id="github-repos"></div>
     </div>
 
 </div>
+<script src="{{ (resources.Get "scripts/github.js" | minify).RelPermalink }}"></script>
 {{ end }}
