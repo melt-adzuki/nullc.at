@@ -8,7 +8,7 @@ title: NullcatChan!
 - 性別: ない
 - 誕生日: 2021/9/10
 - 身長: 137cm
-- 性格: よくわからない気分屋。
+- 性格: よくわからない気分屋
 - 弱点: 赤い光
 
 ## 見た目情報
@@ -24,18 +24,19 @@ title: NullcatChan!
 
 ## ぬるきゃっとちゃん！のねこみみについて
 ねこみみは付け耳。音は検知できない。
+
 素材はやわらかいなにかで作られている。
+
 耳毛はない。
 
 ## ぬるきゃっとちゃん！のアンテナについて
 アンテナは気分によって形が変えられる。アンテナで音などを検知している。
+
 アンテナが頭の上半径30cm圏内にないと感情がなくなってしまう。
 
 ## 取扱説明書
 - [Misskey](/chan-on-misskey/)
-- [Discord](/chan-on-discord/)
 
 ## リポジトリ
 
 - [nca10.net(MisskeyInstance)](https://github.com/nullnyat/NullcatChan)
-- [NCA10(DiscordServer)](https://github.com/melt-adzuki/nullcatchan-on-discord)
