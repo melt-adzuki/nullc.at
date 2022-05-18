@@ -4,35 +4,35 @@ date: 2022-04-11T19:58:23+09:00
 draft: false
 ---
 
-1. `docker-compose.yml`  を下のに変更
+1. `.config/docker-compose.yml` を下のに変更
 
 ```yaml
 version: "3"
 
 services:
-  db:
+  redis:
     restart: always
-    image: postgres:12.2-alpine
-    ports:
-      - "5432:5432"
+    image: redis:4.0-alpine
     networks:
       - internal_network
       - external_network
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis:/data
+
+  db:
+    restart: always
+    image: postgres:12.2-alpine
+    networks:
+      - internal_network
+      - external_network
+    ports:
+      - "5432:5432"
     env_file:
       - .config/docker.env
     volumes:
       - ./db:/var/lib/postgresql/data
-
-  redis:
-    restart: always
-    image: redis:4.0-alpine
-    ports:
-      - "6379:6379"
-    networks:
-      - internal_network
-      - external_network
-    volumes:
-      - ./redis:/data
 
 networks:
   internal_network:
@@ -40,5 +40,28 @@ networks:
   external_network:
 ```
 
-2. `yarn run dev` で起動
-3. [https://localhost:3000](https://localhost:3000) で確認
+2. `.config/default.yml` を下のに変更
+
+```yaml
+url: https://example.tld/
+
+port: 3000
+
+db:
+  host: localhost
+  port: 5432
+  db: misskey
+
+  user: example-misskey-user
+  pass: example-misskey-pass
+
+redis:
+  host: localhost
+  port: 6379
+
+id: 'aid'
+
+```
+
+4. `docker-compose up -d && yarn && yarn build && yarn migrate && yarn dev` で起動
+5. [http://localhost:3000](https://localhost:3000) で確認
