@@ -1,6 +1,7 @@
 <header class='main__header'>
     <div class='main__header__top'>
-        <a href='/'><img src='/images/logo.png' alt='logo'></a>
+        <a class='main__header__logo' href='/'><img src='/images/logo.png' alt='logo'></a>
+        <button class='main__header__functions main__header__functions--light' onclick='toggle()' />
     </div>
 
     <nav class='main__header__menu'>
@@ -13,3 +14,21 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    function toggle() {
+        if (location.pathname === '/') location.reload()
+
+        switch (localStorage.getItem('theme')) {
+            case 'light':
+                localStorage.setItem('theme', 'dark')
+                break
+
+            case 'dark':
+                localStorage.setItem('theme', 'light')
+                break
+            }
+
+        updateDOM()
+    }
+</script>
