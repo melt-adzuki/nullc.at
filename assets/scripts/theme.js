@@ -14,8 +14,8 @@ function updateDOM() {
     const theme = localStorage.getItem('theme')
 
     const dom = [
-        ['body', 'body--light'],
-        ['.main__header__functions', 'main__header__functions--light'],
+        ['body', 'body--dark', 'body--light'],
+        ['.main__header__functions', 'main__header__functions--dark', 'main__header__functions--light'],
     ]
 
     dom.forEach(item => {
@@ -23,14 +23,16 @@ function updateDOM() {
 
         switch (theme) {
             case 'dark':
-                element.classList.remove(item[1])
+                element.classList.remove(item[2])
+                element.classList.add(item[1])
                 break
 
             case 'light':
-                element.classList.add(item[1])
+                element.classList.remove(item[1])
+                element.classList.add(item[2])
                 break
         }
     })
 }
 
-window.addEventListener('load', updateDOM)
+window.addEventListener('DOMContentLoaded', updateDOM)

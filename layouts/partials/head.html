@@ -7,6 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ (resources.Get "sass/main.sass" | toCSS | minify).RelPermalink }}">
 <title>{{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }}</title>
+<script src="{{ (resources.Get "scripts/theme.js" | minify).RelPermalink }}"></script>
+<script src="{{ (resources.Get "scripts/console.js" | minify).RelPermalink }}"></script>
+<script src="{{ (resources.Get "scripts/index.js" | minify).RelPermalink }}"></script>
 
 <!-- Open Graph Protocol -->
 <meta property="og:title" content="nullc.at" />
