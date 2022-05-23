@@ -9,6 +9,10 @@
                 {{ block "main" . }}{{ end }}
             </main>
         </div>
+        <script>
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+            }
+        </script>
     </body>
-    <script src="{{ (resources.Get "scripts/theme.js" | minify).RelPermalink }}"></script>
 </html>

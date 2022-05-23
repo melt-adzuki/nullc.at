@@ -15,6 +15,7 @@ function getRepos() {
                 const a = document.createElement('a');
                 const img = document.createElement('img');
                 img.src = `https://github-readme-stats.vercel.app/api/pin/?username=nullnyat&repo=${repo.name}${theme}`;
+                img.alt = `github-repos`
                 a.href = repo.html_url;
                 a.append(img);
                 list.appendChild(a);

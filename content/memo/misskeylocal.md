@@ -42,8 +42,10 @@ networks:
 
 2. `.config/default.yml` を下のに変更
 
+アクセスするURLと`.config/default.yml`で指定するURLが違うと画像が正しく表示されなくなってしまうのでここでは`https://localhost:3000`を指定する
+
 ```yaml
-url: https://example.tld/
+url: http://localhost:3000
 
 port: 3000
 
@@ -64,4 +66,4 @@ id: 'aid'
 ```
 
 4. `docker-compose up -d && yarn && yarn build && yarn migrate && yarn dev` で起動
-5. [http://localhost:3000](https://localhost:3000) で確認
+5. [http://localhost:3000](http://localhost:3000) で確認

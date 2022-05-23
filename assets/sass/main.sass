@@ -12,10 +12,19 @@ a
 body
   margin: 0
   height: 100vh
+  color: var(--text-color)
+
+  @media (prefers-color-scheme: dark)
+    background-color: #181924
+
+  @media (prefers-color-scheme: light)
+    background-color: white
+
+.body--dark
   background: url("/images/d-bg.png")
   --text-color: #D5EEFF
   --background-color: #181924
-  color: var(--text-color)
+
 
 .body--light
   background: url("/images/bg.png")
