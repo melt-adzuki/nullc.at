@@ -20,12 +20,12 @@
         if (location.pathname === '/') location.reload()
 
         switch (localStorage.getItem('theme')) {
-            case 'light':
-                localStorage.setItem('theme', 'dark')
-                break
-
             case 'dark':
                 localStorage.setItem('theme', 'light')
+                break
+
+            case 'light':
+                localStorage.setItem('theme', 'dark')
                 break
             }
 

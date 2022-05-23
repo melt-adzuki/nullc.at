@@ -29,6 +29,6 @@ IDE: IntelliJ
 
 Shell: Pwsh7, fish
 
-keyboard: REALDORCE
+keyboard: REALFORCE
 
 Mouse: M5750W
