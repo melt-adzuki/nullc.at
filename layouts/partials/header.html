@@ -17,7 +17,10 @@
 
 <script>
     function toggle() {
-        if (location.pathname === '/') location.reload()
+        if (location.pathname === '/') {
+             location.reload()
+             return
+        }
 
         switch (localStorage.getItem('theme')) {
             case 'dark':
