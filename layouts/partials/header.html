@@ -17,11 +17,6 @@
 
 <script>
     function toggle() {
-        if (location.pathname === '/') {
-             location.reload()
-             return
-        }
-
         switch (localStorage.getItem('theme')) {
             case 'dark':
                 localStorage.setItem('theme', 'light')
@@ -32,6 +27,10 @@
                 break
             }
 
-        updateDOM()
+        if (location.pathname === '/') {
+             location.reload()
+        } else {
+            updateDOM()
+        }
     }
 </script>
